@@ -345,3 +345,8 @@ a:hover {
 	float: left;
 	margin-left: -15px;
 }
+
+@media only screen and (max-width: 768px) {
+	#bottom * { text-align: center !important; }
+	#logo {margin-left: 10px;}
+}

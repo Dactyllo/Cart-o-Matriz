@@ -16,7 +16,11 @@
 	<script src="assets/js/head.load.min.js"></script>
 	<script type="text/javascript">
 	head.load(["assets/css/bootstrap.css","assets/css/main.css","assets/css/responsive.css","assets/css/googleFonts.css","https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css","assets/extras/animate.css","assets/js/jquery-min.js"], function() {
-		head.load(["assets/js/bootstrap.js", "assets/js/wow.js", "assets/js/main.js"]);
+		head.load(["assets/js/bootstrap.js", "assets/js/wow.js", "assets/js/main.js"], function() {
+			$('.marketButton').on('click', function() {
+				alert("Ainda não disponível ao público em geral, para breve...");
+			});
+		});
 	});
 	</script>
 	<!--[if lt IE 9]>
@@ -51,8 +55,8 @@
 			<div class="row">
 				<h1 class="title-small wow fadeInDown">Pela segurança e praticabilidade</h1>
 				<div class="col-md-12 text-center">
-					<a class="btn btn-border btn-lg wow fadeInLeft animated" data-wow-offset="10" href="javascript:void(0)"><i class="fa fa-android"></i> Grátis (brevemente)</a>
-					<a class="btn btn-border btn-lg wow fadeInRight animated" data-wow-offset="10" href="javascript:void(0)"><i class="fa fa-android"></i> Completa (brevemente)</a>
+					<a class="btn btn-border btn-lg wow fadeInLeft animated marketButton" data-wow-offset="10" href="javascript:void(0)"><i class="fa fa-android"></i> Grátis</a>
+					<a class="btn btn-border btn-lg wow fadeInRight animated marketButton" data-wow-offset="10" href="javascript:void(0)"><i class="fa fa-android"></i> Completa</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 					<div class="content-left text-right wow fadeInLeft animated" data-wow-offset="10">

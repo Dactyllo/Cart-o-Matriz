@@ -9,22 +9,138 @@
 	<meta name="keywords" content="Cartão Matriz, online banking, finanças,">
 	<meta property="og:title" content="Cartão Matriz - Aplicação Mobile" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://dactyllo.github.io/Cartao-Matriz/privacidade.html" />
+	<meta property="og:url" content="http://cartaomatriz.joaogaiao.ga/privacidade.html" />
 	<!--meta property="og:image" content="http://joaogaiao.pt/images/avatar.jpg" /-->
 	<meta property="og:description" content="Aplicação simples para gestão de credenciais." />
 	<title>Cartão Matriz - Politica de Privacidade</title>
 	<script src="assets/js/head.load.min.js"></script>
-	<script type="text/javascript">
-	head.load(["assets/css/bootstrap.css","assets/css/main.css","assets/css/responsive.css","assets/css/googleFonts.css","https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css","assets/extras/animate.css","assets/js/jquery-min.js"], function() {
-		head.load(["assets/js/bootstrap.js", "assets/js/wow.js", "assets/js/main.js"]);
-	});
+	<script class="scripto" type="text/javascript">
+	//head.load(["assets/css/bootstrap.css","assets/css/main.css","assets/css/responsive.css","assets/css/googleFonts.css","https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css","assets/extras/animate.css"]);
+	head.load(["assets/css/bootstrap.css","assets/css/main.css","assets/css/responsive.css","assets/css/googleFonts.css","https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css","assets/extras/animate.css"]);
 	</script>
+	<style class="scripto" media="screen">
+		#loaderWrapper {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: #3498DB;
+			z-index: 9999;
+		}
+		#loader {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -50px;
+			margin-top: -50px;
+			width: 100px;
+			height: 100px;
+		}
+		.sk-folding-cube {
+		  margin: 20px auto;
+		  width: 100%;
+		  height: 100%;
+		  position: relative;
+		  -webkit-transform: rotateZ(45deg);
+		          transform: rotateZ(45deg);
+		}
+
+		.sk-folding-cube .sk-cube {
+		  float: left;
+		  width: 50%;
+		  height: 50%;
+		  position: relative;
+		  -webkit-transform: scale(1.1);
+		      -ms-transform: scale(1.1);
+		          transform: scale(1.1);
+		}
+		.sk-folding-cube .sk-cube:before {
+		  content: '';
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  background-color: #333;
+		  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+		          animation: sk-foldCubeAngle 2.4s infinite linear both;
+		  -webkit-transform-origin: 100% 100%;
+		      -ms-transform-origin: 100% 100%;
+		          transform-origin: 100% 100%;
+		}
+		.sk-folding-cube .sk-cube2 {
+		  -webkit-transform: scale(1.1) rotateZ(90deg);
+		          transform: scale(1.1) rotateZ(90deg);
+		}
+		.sk-folding-cube .sk-cube3 {
+		  -webkit-transform: scale(1.1) rotateZ(180deg);
+		          transform: scale(1.1) rotateZ(180deg);
+		}
+		.sk-folding-cube .sk-cube4 {
+		  -webkit-transform: scale(1.1) rotateZ(270deg);
+		          transform: scale(1.1) rotateZ(270deg);
+		}
+		.sk-folding-cube .sk-cube2:before {
+		  -webkit-animation-delay: 0.3s;
+		          animation-delay: 0.3s;
+		}
+		.sk-folding-cube .sk-cube3:before {
+		  -webkit-animation-delay: 0.6s;
+		          animation-delay: 0.6s;
+		}
+		.sk-folding-cube .sk-cube4:before {
+		  -webkit-animation-delay: 0.9s;
+		          animation-delay: 0.9s;
+		}
+		@-webkit-keyframes sk-foldCubeAngle {
+		  0%, 10% {
+		    -webkit-transform: perspective(140px) rotateX(-180deg);
+		            transform: perspective(140px) rotateX(-180deg);
+		    opacity: 0;
+		  } 25%, 75% {
+		    -webkit-transform: perspective(140px) rotateX(0deg);
+		            transform: perspective(140px) rotateX(0deg);
+		    opacity: 1;
+		  } 90%, 100% {
+		    -webkit-transform: perspective(140px) rotateY(180deg);
+		            transform: perspective(140px) rotateY(180deg);
+		    opacity: 0;
+		  }
+		}
+
+		@keyframes sk-foldCubeAngle {
+		  0%, 10% {
+		    -webkit-transform: perspective(140px) rotateX(-180deg);
+		            transform: perspective(140px) rotateX(-180deg);
+		    opacity: 0;
+		  } 25%, 75% {
+		    -webkit-transform: perspective(140px) rotateX(0deg);
+		            transform: perspective(140px) rotateX(0deg);
+		    opacity: 1;
+		  } 90%, 100% {
+		    -webkit-transform: perspective(140px) rotateY(180deg);
+		            transform: perspective(140px) rotateY(180deg);
+		    opacity: 0;
+		  }
+		}
+	</style>
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
 <body>
+	<div id="loaderWrapper">
+		<div id="loader">
+			<div class="sk-folding-cube">
+			  <div class="sk-cube1 sk-cube"></div>
+			  <div class="sk-cube2 sk-cube"></div>
+			  <div class="sk-cube4 sk-cube"></div>
+			  <div class="sk-cube3 sk-cube"></div>
+			</div>
+		</div>
+	</div>
 	<div class="logo-menu">
 		<nav class="navbar navbar-default">
 			<div class="container">
@@ -80,10 +196,25 @@
 					<p>Cartão Matriz &copy; Todos os direitos reservados.</p>
 				</div>
 				<div class="col-xs-12 col-sm-6 text-right">
-					<p>Criado por <a href="http://www.joaogaiao.pt" target="_blank">João Gaião</a></p>
+					<p>Criado por <a href="http://joaogaiao.ga" target="_blank">João Gaião</a></p>
 				</div>
 			</div>
 		</div>
 	</section>
+	<script class="scripto" type="text/javascript">
+	head.load(["https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"], function() {
+		head.load(["https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js", "https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"], function() {
+			var wow = new WOW({
+			    mobile: false
+			});
+			wow.init();
+			$('.marketButton').on('click', function() {
+				alert("Ainda não disponível ao público em geral, para breve...");
+			});
+			$(".scripto").remove();
+			$("#loaderWrapper").fadeOut(200);
+		});
+	});
+	</script>
 </body>
 </html>

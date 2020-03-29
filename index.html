@@ -15,8 +15,7 @@
 	<title>Cartão Matriz - Aplicação Android</title>
 	<script type="text/javascript" src="assets/js/head.load.min.js"></script>
 	<script class="scripto" type="text/javascript">
-	//head.load(["assets/css/bootstrap.css","assets/css/main.css","assets/css/responsive.css","assets/css/googleFonts.css","https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css","assets/extras/animate.css"]);
-	head.load(["https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css","assets/css/main.min.css","assets/css/responsive.min.css","https://fonts.googleapis.com/css?family=Cantarell:400,700","https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css","https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"]);
+	head.load(["https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css","assets/css/main.min.css","assets/css/responsive.min.css","https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css","https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"]);
 	</script>
 	<style class="scripto" media="screen">
 		#loaderWrapper {
@@ -280,8 +279,19 @@
 		</div>
 	</section>
 	<script type="text/javascript">
-	head.load(["https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"], function() {
-		head.load(["https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js", "https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"], function() {
+	head.load(["https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js", "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"], function() {
+		//webfont
+		WebFont.load({
+			google: {
+				families: ['Cantarell:400,700']
+			}
+		});
+		head.load(["https://www.googletagmanager.com/gtag/js?id=UA-113112361-2", "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js", "https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"], function() {
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-113112361-2');
+			
 			var wow = new WOW({
 			    mobile: false
 			});
@@ -294,13 +304,13 @@
 		});
 	});
 	</script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113112361-2"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
 	  gtag('config', 'UA-113112361-2');
-	</script>
+	</script>-->
 </body>
 </html>
